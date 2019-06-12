@@ -16,7 +16,21 @@ VMware
      It shows Ubuntu can not connect to internet.that's why I can't download vim from ubuntu.com and can't get to github link. I waste whole day on searching methods and editing the IP address(I think of turning to group leader,but I didn't,maybe because I want to prove I can get over them by my own,so stupid). But it doesn't work. Finally I install a new Ubuntu with the previous iso file and will work on the new one tomorrow.
 
 6.11 Fix some bugs. Learn that using VMtool to make files transfer between host and vmware.Finish writing MongoDB-C-driver installation.sh. Write a MongoDB-C++-driver installation.sh. and install it successfully. Also install MongoDB on Ubuntu.当
-   1.一定要安装最新版本。
-   2.你遇到安装失败的时候，应该检查文件名是否一致。可能有这种情况：之前测试时候生成的文件还留着，导致目前产生的文件名变为xxxx.2，命令中的文件名没有改变，所以对不上。也有这种情况：解压后的文件夹名字变了，但是命令中的名字仍然是压缩包的名字。
-   3.sudo apt-update 这个里面的sudo不要忘记。
 
+   修改脚本成功安装 mongoDB c driver并写好能成功安装MongoDB c++ driver的第二个脚本 ，并装好MongoDB
+如果安装失败
+0.没有使用最新版本
+
+1.两个虚拟机之间传文件 要用到VMwaretool
+虚拟机--重新安装vmtool 下拉栏 里看看已经安装了没有
+
+2.出现解压不了的情况是因为 tar后面的文件名与真实文件名不一样。 比如解压前的文件名没有"mongo-C++-driver"字样,但解压后文件名被改变。这个非常重要，一定要仔细。
+还有一种可能不是自己写错，因为上一次测试下载过了，所以目前下载的会自动改名为xxxx.2，导致安装失败
+
+3.提示无法git clone是因为没有安装git
+   E:Could not open lock file /var/lib/dpkg/lock - open (13:Permission denied) 
+   E:Unable to lock the administration directory (/var/lib/dpkg/),are you root? 
+
+4.安装git不成功 不是因为有其他的程序在运行或者安装 是因为apt-get install git 的命令的开头没有加sudo!!!!给跪
+
+    顺利安装成功！
