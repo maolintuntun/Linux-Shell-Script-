@@ -34,3 +34,7 @@ VMware
 4.安装git不成功 不是因为有其他的程序在运行或者安装 是因为apt-get install git 的命令的开头没有加sudo!!!!给跪
 
     顺利安装成功！
+    
+6.12 Begin install webstorm on Ubuntu. install jdk and try to edit the environment variable.
+     ( leave 2 days for sick)
+6.17 Install MongoDB,Nodejs, Angular on Ubuntu. Download Robo3T package for install tomorrow.
