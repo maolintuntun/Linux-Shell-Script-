@@ -37,4 +37,7 @@ VMware
     
 6.12 Begin install webstorm on Ubuntu. install jdk and try to edit the environment variable.
      ( leave 2 days for sick)
+     
 6.17 Install MongoDB,Nodejs, Angular on Ubuntu. Download Robo3T package for install tomorrow.
+     安装Angular 时一直卡在权限问题 permission denied尝试sudo开头然并卵，提醒我善用Stackoverflow处理报错问题!! 
+     不要提前把酸奶从冰箱拿出来，会因为忙忘记而热掉。想起来的时候应该马上把它吃掉。下午开始干活前把水果吃掉不然下午要忘记。
