@@ -1,4 +1,4 @@
-# ROS-
+# ROS install shell script
 
 Ubuntu 16.04(using iso)
 VMware
